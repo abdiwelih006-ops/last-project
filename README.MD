@@ -71,8 +71,7 @@ This project was built for learning and practicing front-end web development fun
 
 ## 👨‍💻 Author
 
-Your Name  
-GitHub: https://github.com/your-username
+ABDIWELI HUSSEIN HASSAN
 
 ---
 

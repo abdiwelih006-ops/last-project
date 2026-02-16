@@ -62,10 +62,10 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function () {
             const itemName = this.getAttribute("data-item");
             alert("✅ You have successfully ordered: " + itemName);
+            const form = document.getElementById("contactForm");
+
         });
     });
-
-});
 
 
 

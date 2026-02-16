@@ -18,11 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             alert("Thank you " + name + "! Your message has been sent successfully.");
-
             form.reset();
         });
     }
-
 
     /* =========================
        2. SMOOTH SCROLL
@@ -42,7 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-
     /* =========================
        3. NAVBAR COLOR CHANGE
     ========================== */
@@ -54,34 +51,22 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             navbar.style.backgroundColor = "#222";
         }
-        // Order Button Function
-document.addEventListener("DOMContentLoaded", function () {
+    });
 
+    /* =========================
+       4. ORDER BUTTON FUNCTION
+    ========================== */
     const buttons = document.querySelectorAll(".order-btn");
 
     buttons.forEach(button => {
         button.addEventListener("click", function () {
             const itemName = this.getAttribute("data-item");
-            alert("You have ordered: " + itemName + " 🍽️");
-            document.addEventListener("DOMContentLoaded", function () {
-
-    const orderButtons = document.querySelectorAll(".order-btn");
-
-    orderButtons.forEach(function(button) {
-        button.addEventListener("click", function() {
-
-            const itemName = this.getAttribute("data-item");
-
             alert("✅ You have successfully ordered: " + itemName);
-            document.addEventListener("DOMContentLoaded", function () {
-    const buttons = document.querySelectorAll(".order-btn");
-
-    buttons.forEach(button => {
-        button.addEventListener("click", function () {
-            const itemName = this.getAttribute("data-item");
-            alert(itemName + " has been added to your order!");
         });
     });
+
+});
+
 
 
 

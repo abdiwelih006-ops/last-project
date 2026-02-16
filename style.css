@@ -157,3 +157,9 @@ footer {
     background: #e09e00;
     transform: scale(1.05);
 }
+.menu-item img {
+    width: 100%;          /* Make image fill container width */
+    height: 200px;        /* Set fixed height */
+    object-fit: cover;    /* Crop image nicely without distortion */
+    border-radius: 8px;   /* Optional: smooth corners */
+}

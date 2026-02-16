@@ -73,12 +73,17 @@ document.addEventListener("DOMContentLoaded", function () {
             const itemName = this.getAttribute("data-item");
 
             alert("✅ You have successfully ordered: " + itemName);
+            document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".order-btn");
 
+    buttons.forEach(button => {
+        button.addEventListener("click", function () {
+            const itemName = this.getAttribute("data-item");
+            alert(itemName + " has been added to your order!");
         });
     });
 
-});
 
-        });
-    });
+
+
 

@@ -164,7 +164,7 @@ footer {
     border-radius: 8px;   /* Optional: smooth corners */
 }
 .menu-item {
-    background: white;
+    background: rgb(9, 171, 9);
     padding: 20px;
     width: 250px;              /* Make card wider */
     border-radius: 10px;

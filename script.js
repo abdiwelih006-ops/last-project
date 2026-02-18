@@ -85,6 +85,46 @@ contactForm.addEventListener("submit", function (e) {
     contactForm.reset();
   }
 });
+// script.js
+
+// Constructor function for menu items
+function MenuItem(name, description, price) {
+    this.name = name;
+    this.description = description;
+    this.price = price;
+}
+
+// Example: create a few menu items
+const burger = new MenuItem("Classic Burger", "Beef patty with lettuce, tomato, and cheese", 8.99);
+const pizza = new MenuItem("Margherita Pizza", "Tomato, mozzarella, fresh basil", 10.99);
+const biryani = new MenuItem("Chicken Biryani", "Spiced chicken with basmati rice", 12.99);
+
+// Store menu items in an array
+const menu = [burger, pizza, biryani];
+
+// Function to display menu in console
+function showMenu() {
+    console.log("=== TastyBite Menu ===");
+    menu.forEach(item => {
+        console.log(`${item.name} - $${item.price}`);
+        console.log(`  ${item.description}`);
+    });
+}
+
+// Call the function
+showMenu();
+// Object literal for a customer order
+const order1 = {
+    customer: "Abdiweli",
+    items: [burger, biryani],
+    total: function() {
+        // calculate total price
+        return this.items.reduce((sum, item) => sum + item.price, 0);
+    }
+};
+
+console.log("Order for:", order1.customer);
+console.log("Total:", order1.total().toFixed(2)); // e.g., 21.98
 
 
 
